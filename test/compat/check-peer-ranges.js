@@ -155,8 +155,8 @@ function satisfies(version, range, options = {}) {
 }
 
 // ── 策略与检查 ────────────────────────────────────────────────────────────────
-/** 本仓库声明支持、并已在真实 profile 上跑过的 DSH 基线：只有这一条线。 */
-const SUPPORTED_BASELINES = ['0.2.0-rc.2']
+/** 本仓库声明支持、并已在真实 profile 上跑过的 DSH 基线：0.2.0 线与 0.2.1 线。 */
+const SUPPORTED_BASELINES = ['0.2.0-rc.2', '0.2.1-rc.2']
 /**
  * 必须被拒绝的宿主版本（runtime 与 install 两种模式都不能满足）：
  * 已放弃的旧线、功能未在其上验证过的前一个预发布、以及不放行的下一个次版本的预发布。
